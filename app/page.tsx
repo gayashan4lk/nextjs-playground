@@ -1,11 +1,10 @@
-import Image from 'next/image'
+import { getUploadUrl } from '@/actions/s3'
+import ImageUploadForm from './_components/ImageUploadForm'
 
-export default function Home() {
+export default async function Home() {
 	return (
 		<div>
-			<main>
-				<h1>Next.js Playground</h1>
-			</main>
+			<ImageUploadForm getUploadUrl={getUploadUrl} />
 		</div>
 	)
 }
