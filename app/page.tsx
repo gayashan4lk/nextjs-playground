@@ -6,7 +6,12 @@ export default async function Home() {
 	return (
 		<div>
 			<ImageUploadForm getUploadUrl={getUploadUrl} />
-			<button onClick={execute}>Submit</button>
+			<button
+				className="m-2 rounded bg-emerald-300 px-2 py-1"
+				onClick={execute}
+			>
+				Submit
+			</button>
 		</div>
 	)
 }
